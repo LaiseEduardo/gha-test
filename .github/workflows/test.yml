@@ -1,0 +1,14 @@
+name: My Tests
+on:   
+  schedule:
+    - cron: 0 22 * * *
+  push
+jobs: 
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install 
+        run: npm ci
+      - name: run jest tests
+        run: npm test
