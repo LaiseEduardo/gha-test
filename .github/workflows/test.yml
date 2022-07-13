@@ -1,7 +1,7 @@
 name: My Tests
 on:   
-  schedule:
-    - cron: 0 22 * * *
+  # schedule:
+  #   - cron: 0 22 * * *
   push
 jobs: 
   unit-tests:
